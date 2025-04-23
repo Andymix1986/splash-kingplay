@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Splash</title>
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+background-color: #000;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-family: 'Arial', sans-serif;
+}
+
+img {
+width: 180px;
+height: auto;
+margin-bottom: 20px;
+}
+
+h1 {
+color: white;
+font-size: 28px;
+text-align: center;
+text-shadow:
+0 0 5px #fff,
+0 0 10px #0ff,
+0 0 15px #0ff,
+0 0 20px #0ff;
+animation: neonGlow 3s infinite;
+}
+
+@keyframes neonGlow {
+0% {
+text-shadow:
+0 0 5px #fff,
+0 0 10px #0ff,
+0 0 15px #0ff,
+0 0 20px #0ff;
+}
+33% {
+text-shadow:
+0 0 5px #fff,
+0 0 10px #f0f,
+0 0 15px #f0f,
+0 0 20px #f0f;
+}
+66% {
+text-shadow:
+0 0 5px #fff,
+0 0 10px #ff0,
+0 0 15px #ff0,
+0 0 20px #ff0;
+}
+100% {
+text-shadow:
+0 0 5px #fff,
+0 0 10px #0ff,
+0 0 15px #0ff,
+0 0 20px #0ff;
+}
+}
+</style>
+</head>
+<body>
+<img src="https://images2.imgbox.com/80/74/IS5JmwCk_o.png" alt="Logo de la App">
+<h1>King Play</h1>
+
+<script>
+setTimeout(() => {
+window.location.href = "index.html"; // Cambia esto si usás otro archivo
+}, 3000); // Espera 3 segundos
+</script>
+</body>
+</html>
